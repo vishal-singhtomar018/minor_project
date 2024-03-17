@@ -1,0 +1,111 @@
+<% layout('/layouts/boilerplate') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm Fresh</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<br><br>
+<body>
+  <header class="hero">
+    <div >
+      <h1>Welcome to CropCare</h1>
+      <p> Being Helping Hand To Farmer</p>
+      <a href="#" class="btn" style="color: white;">About Us</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <div >
+      <div class="feature">
+        <img src="https://images.pexels.com/photos/6711556/pexels-photo-6711556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Farmers" height="150" width="150">  
+        <h3>Local Farmers</h3>
+        <p>Our products are sourced directly from local farmers who prioritize quality and sustainability.</p>
+      </div>
+      <div class="feature">
+        <img src="https://cdn.pixabay.com/photo/2018/03/21/16/05/greenhouse-3247181_960_720.jpg" alt="Organic" height="150" width="150"> 
+        <h3>Organic Produce</h3>  
+        <p>Farming looks mighty easy when your plow is a pencil, and you're a thousand miles from the corn field  </p>
+      </div>
+      <div class="feature">
+        <img src="https://images.pexels.com/photos/1814001/pexels-photo-1814001.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Organic" height="150" width="150"> 
+        <h3>Convenient Farming</h3>
+        <p>Trusted Partner in CropCare Solution</p>
+      </div>
+    </div>
+  </section>
+  <div>
+  <div class="home-info">
+    <div class="home-info-img">
+      <img src="https://cdn.pixabay.com/photo/2016/05/26/12/36/indian-1417068_1280.jpg" alt="" height="100%" width="100% ">
+    </div>
+
+    <!-- <div class="home-info-text"> -->
+    <pre id="full">
+
+
+"Seeds of hard work planted by the farmer yield,
+the fruits of prosperity for all."
+"Farming: where every sunrise brings the promise of new beginnings
+and every sunset signifies a day's worth of toil."
+    </pre>
+</div>
+<div class="home-info home-info-2">
+
+<!-- <div class="home-info-text"> -->
+<pre id="full">
+
+
+
+"Seeds of hard work planted by the farmer yield,
+the fruits of prosperity for all."
+"Farming: where every sunrise brings the promise of new beginnings
+and every sunset signifies a day's worth of toil."
+</pre>
+  <div class="home-info-img">
+  <img src="https://images.pexels.com/photos/2321837/pexels-photo-2321837.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" height="100%" width="100%">
+</div>
+</div><br><br><br>
+<marquee behavior="altername" direction="right"><h3 style="font-weight:bolder; color: rgb(41, 206, 41);">CropCare</h3></marquee>
+<div class="last">
+  <div class="card box" style="width: 25rem;">
+    <img class="card-img-top" src="https://cdn.pixabay.com/photo/2023/02/08/07/32/vietnamese-woman-7775904_1280.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+  <div class="card box" style="width: 25rem;">
+    <img class="card-img-top box" src="https://cdn.pixabay.com/photo/2023/02/08/07/32/vietnamese-woman-7775904_1280.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div><div class="card box" style="width: 25rem;">
+    <img class="card-img-top box" src="https://cdn.pixabay.com/photo/2023/02/08/07/32/vietnamese-woman-7775904_1280.jpg " alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+  </div>
+</div>
+
+  <script>var div = document.getElementById("full");
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++ ) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+    
+    function changeColor(){
+      div.style.color= getRandomColor();
+    }
+    
+    setInterval(changeColor,1000);
+    </script>
+</body>
+</html>
+    

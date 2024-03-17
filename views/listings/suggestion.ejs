@@ -1,0 +1,15 @@
+<% layout('/layouts/boilerplate') %>
+<form method="POST" action="/listings/<%=listing._id %>?_method=PUT" novalidate class="needs-validation" >
+    <div class="mb-3">
+        <label for="description" class="form-label"><b>suggestion</b></label><br>
+        <textarea  cols="10" rows="5" class="form-control" required> </textarea>
+        <div  class="invalid-feedback">Suggestion should be short</div>
+    </div>
+    <div class="mb-3">
+        <label for="image" class="form-label"><b>Image Link</b></label><br>
+        <input type="text"  class="form-control">
+        <div  class="invalid-feedback">Image  path  should  be  valid</div>
+    </div>
+    <br>
+    <button class="btn btn-dark edit-btn">save Changes</button>
+</form>

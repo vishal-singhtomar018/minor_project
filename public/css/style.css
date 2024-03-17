@@ -18,15 +18,20 @@ body
 }
 .fa-compass
 {
-    color: #fe424d;
+    color: rgb(0, 133, 0)
 }
 .nav-link
 {
-    color: #222222 !important;
+    color: rgb(41, 204, 41) !important;
     display: inline-block;
 }
 
 /* footer */
+.footer
+{
+  margin-top: 20%;
+  width: 100%;
+}
 .f-info-links,.f-info-social,.f-info-brand
 {
     width: 100%;
@@ -42,7 +47,7 @@ body
 .f-info-links a
 {
 text-decoration: none;
-color:  #222222 ;
+color:  #222222 ; 
 }
 
 .f-info-links a :hover{
@@ -50,14 +55,15 @@ color:  #222222 ;
 }
 .f-info
 {
-    text-align: center;
-    height: 8rem;
-    background-color: aliceblue;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items:space-evenly;
-    margin-top: 2rem;
+  text-align: center;
+  height: 8rem;
+  background-color:rgb(172, 203, 172);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:space-evenly;
+  margin-top: 2rem;
+  width: 100%;
 }
 .f-info-brand
 {
@@ -91,11 +97,6 @@ color:  #222222 ;
 }
 
 /* card effect */
-.card :hover
-{
-    opacity:0.2;
-    background-color: white ;
-}
 .add-btn
 {
     background-color: #fe424d;
@@ -121,4 +122,167 @@ color:  #222222 ;
 .card-text li
 {
     list-style-type: none;
+}
+
+
+/* home page */
+/* Reset styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 100% !important;
+    margin: 0 auto;
+    padding: 0 20px;
+  } 
+  
+  .hero {
+    background-image: url('https://cdn.pixabay.com/photo/2016/11/29/01/16/rice-field-1866498_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #76b852;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .features {
+    padding: 50px 0;
+  }
+  
+  .feature {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .feature img {
+    border-radius: 50%;
+  }
+  
+  .feature h3 {
+    margin-top: 20px;
+  }
+  
+ .home-info
+ {
+  /* padding-top: 5rem; */
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  /* border: 1px solid black; */
+  height: 30rem;
+  width: 100%;
+ }
+ .home-info-img
+ {
+  margin-top: 3rem;
+  /* border:1px solid black; */
+  width: 40%;
+  height: 25rem;
+ }
+ .home-info-img img
+ {
+  border-radius: 10px;
+ }
+ #full
+ {
+  font-weight: bolder;
+  line-height:4cap;
+  font-size: large;
+ }
+ .home-info-2
+ {
+  /* padding-top: 10rem; */
+  margin-top: 5rem;
+ }
+
+ /* slidbar */
+ .slideshow-container {
+  max-width: 900px;
+  height: fit-content;
+  position: relative;
+  margin: auto; 
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  height: 30rem;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.last
+{
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border:1px solid black; */
+  width: 100%;  
+}
+body{
+  background: #fff;
+}
+.box {
+  transition: box-shadow .3s;
+  border-radius:10px;
+  border: 1px solid #ccc;
+  background: #fff;
+  float: left;
+  
+}
+.box:hover {
+  box-shadow: 0 0 11px green
 }

@@ -3,11 +3,11 @@
 <div class="row">
     <div class="col-8 offset-2">
     <body>
-        <h3 style="color: #fe424d;; padding-top: 2rem;">Create A new Listing</h3><br>
+        <h3 style="color: #fe424d;; padding-top: 2rem;">Add your Queries Here</h3><br>
         <form action="/listings" method="post" novalidate class="needs-validation">
             <div class="mb-3">
-                <label for="title" class="form-lable"><b>Title</b></label><br>
-                <input type="text" name="listing[title]" placeholder="enter title" class="form-control" required><br>
+                <label for="title" class="form-lable"><b>Fasal Ka Naam</b></label><br>
+                <input type="text" name="listing[title]" placeholder="Fasal Ka Naam Likhe" class="form-control" required><br>
                 <div  class="valid-feedback">Title looks good</div>
             </div >
             <div class="mb-3">
@@ -22,9 +22,9 @@
                     <div  class="invalid-feedback">Image path should be valid</div>
                 </div>
                 <div class="mb-3">
-                    <label for="price" class="form-lable"><b>Price</b></label><br>
-                    <input  name="listing[price]" placeholder="enter price" class="form-control"  required><br>
-                    <div  class="invalid-feedback">Enter  Valid Price</div>
+                    <label for="price" class="form-lable"><b>Contact</b></label><br>
+                    <input  name="listing[price]" placeholder="Apna Mobile Number Dale" class="form-control"  required><br>
+                    <div  class="invalid-feedback">Enter  Valid Mobile Number</div>
                 </div >
                 <div class=" mb-3">
                     <label for="location" class="form-lable"><b>Location</b></label><br>
@@ -36,6 +36,11 @@
                 <label for="country" class="form-lable"><b>Country</b></label><br>
                 <input type="text" name="listing[country]" placeholder="Add country" class="form-control"  required><br>
                 <div  class="invalid-feedback">Please Enter Valid Country Name</div>
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label"><b>Time Duration</b></label><br>
+                <input type="text" name="listing[Time]" placeholder="fasal bone ka samay daale" class="form-control" required>
+                <div  class="invalid-feedback">Please  Enter Right Time</div>
             </div>
             <button class="btn btn-dark edit-btn">ADD</button>
         </form>
